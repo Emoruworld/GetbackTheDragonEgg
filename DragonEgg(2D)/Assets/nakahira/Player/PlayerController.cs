@@ -193,6 +193,6 @@ public class PlayerController : MonoBehaviour
     // 死亡時の処理 アニメーションで実行している
     public void Death()
     {
-        fadePanel.GetComponent<FadeManager>().FadeOutSwitch(12);
+        fadePanel.GetComponent<FadeManager>().FadeOutSwitch(10);
     }
 }

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2647669655321122450}
   - component: {fileID: 7295676915401859635}
   - component: {fileID: 2223995045727690828}
-  - component: {fileID: 7739626613913200027}
+  - component: {fileID: -2032703834861361451}
   m_Layer: 0
   m_Name: DragonFry_Green
   m_TagString: Enemy
@@ -171,7 +171,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &7739626613913200027
+--- !u!114 &-2032703834861361451
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -180,7 +180,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7192004642108907744}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6df72dc1d283a1c4089b9215ee4cc97d, type: 3}
+  m_Script: {fileID: 11500000, guid: 76d357798b1e4484d90104e7405a64a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 5153415802626949422, guid: 38c10bc58e8510a4c9b8f3a2a00ad1c1, type: 3}
