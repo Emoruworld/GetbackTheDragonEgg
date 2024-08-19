@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7315493978749941829}
   - component: {fileID: 547678670730950124}
+  - component: {fileID: 2337199238947882507}
   - component: {fileID: 7847622946479314329}
   - component: {fileID: 1413056297954037329}
   - component: {fileID: 8156095317295145112}
-  - component: {fileID: 3740251554248580254}
   m_Layer: 0
   m_Name: PurpleORB
   m_TagString: Enemy
@@ -88,6 +88,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2337199238947882507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2410032453205122833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86aceb1b93aa4654f91c036fe63073c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 3186371575537103281, guid: c6d176ea6ca0dcf47835db668cbb37b4, type: 3}
 --- !u!58 &7847622946479314329
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -171,16 +184,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &3740251554248580254
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2410032453205122833}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ead1b38f058a8142bb58c9e9da30eb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 3186371575537103281, guid: c6d176ea6ca0dcf47835db668cbb37b4, type: 3}

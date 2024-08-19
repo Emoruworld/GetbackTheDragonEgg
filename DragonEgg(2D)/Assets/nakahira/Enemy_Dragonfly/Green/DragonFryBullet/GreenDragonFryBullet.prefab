@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 142056300483076563}
   - component: {fileID: 3175955662599961500}
   - component: {fileID: -6040075934283316066}
-  - component: {fileID: 6911249690073502712}
+  - component: {fileID: 7442873350098205038}
   m_Layer: 0
   m_Name: GreenDragonFryBullet
   m_TagString: EnemyBullet
@@ -153,7 +153,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &6911249690073502712
+--- !u!114 &7442873350098205038
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -162,6 +162,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 5153415802626949422}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d249c85b16298994e8b9ae8d614f9897, type: 3}
+  m_Script: {fileID: 11500000, guid: 375440af4a53a8b4eaa8dc27e1046442, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
