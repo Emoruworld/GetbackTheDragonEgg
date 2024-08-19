@@ -101,6 +101,6 @@ public class OptionManager : MonoBehaviour
     public void OnclickGoButton()
     {
         _positiveSe.Play();
-        fadeManager.FadeOutSwitch(0);
+        fadeManager.FadeOutSwitch(99);
     }
 }

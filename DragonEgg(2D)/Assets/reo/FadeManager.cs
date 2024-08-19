@@ -88,7 +88,7 @@ public class FadeManager : MonoBehaviour
             //case 100:
             //    loadScene = "TestStageSelectScene";
             //    break;
-            case 0:
+            case 99:
                 loadScene = "TitleScene";
                 break;
             case 100:
