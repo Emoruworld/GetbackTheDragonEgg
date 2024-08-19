@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 2377675630698236993}
   - component: {fileID: 7877343198826182144}
   - component: {fileID: 1937375993699846954}
-  - component: {fileID: 9107773366830664165}
   - component: {fileID: 5607689248355651874}
+  - component: {fileID: 4470299704132726458}
   m_Layer: 0
   m_Name: PurpleDragonFryBullet
   m_TagString: EnemyBullet
@@ -132,18 +132,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.077799916, y: 0.15740004}
   m_EdgeRadius: 0
---- !u!114 &9107773366830664165
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1792854392252252727}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57bfaf5b09542d140a98af4143a0cfbc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!95 &5607689248355651874
 Animator:
   serializedVersion: 5
@@ -165,3 +153,15 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &4470299704132726458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792854392252252727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffcfecd11ce02834fa2db3275ac6885b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

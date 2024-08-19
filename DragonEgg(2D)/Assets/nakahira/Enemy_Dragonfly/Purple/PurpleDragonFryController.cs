@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GreenDragonFryController : Enemy
+public class PurpleDragonFryController : Enemy
 {
     private const int DRAGONFRYATTACK = 1;
     private const float SHOOTSPAN = 1;
     private Rigidbody2D myRigid;
     // よける際の速さ
-    private float dodgeForce = 250;
+    private float dodgeForce = 200;
     // 帰るときのスピード
     private float exitForceX = 10f;
     private float exitForceY = -1f;
@@ -20,7 +20,7 @@ public class GreenDragonFryController : Enemy
     // Start時に左にはけるか右にはけるか決めておく
     private int leftOrRight = 0;
 
-    private const float DODGEINCREACE = 1.5f;
+    private const float DODGEINCREACE = 1f;
     private float blueDodgeInterval = DODGEINCREACE;
     protected override void Start()
     {
@@ -36,7 +36,7 @@ public class GreenDragonFryController : Enemy
         }
         // 最初だけちょっと前に出る
         myRigid.AddForce(Vector2.down * 200);
-        hitPoint = 5; // リテラルパンチ
+        hitPoint = 10; // リテラルパンチ
     }
 
     protected override void Update()

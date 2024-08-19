@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GreenDragonFryBulletController : EnemyBullet
 {
-    private const int BULLETATTACK = 2;
+    private const int BULLETATTACK = 3;
     private const float SPEED = 1f;
     // Start is called before the first frame update
     protected override void Start()

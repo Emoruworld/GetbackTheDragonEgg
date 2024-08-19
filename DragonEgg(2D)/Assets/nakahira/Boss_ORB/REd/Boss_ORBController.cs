@@ -10,10 +10,34 @@ public class Boss_ORBController : ORBController // åpè≥
     protected override void Start()
     {
         base.Start();
-        hitPoint = 100;
-        shootSpan = 0.3f;
-        attack = 5;
+
+
         fadeManager = GameObject.Find("FadePanel").GetComponent<FadeManager>();
+
+        string sceneName = SceneManager.GetActiveScene().name;
+        switch (sceneName)
+        {
+            case "Battle1":
+                hitPoint = 100;
+                attack = 5;
+                shootSpan = 0.5f;
+                break;
+            case "Battle2":
+                hitPoint = 300;
+                attack = 8;
+                shootSpan = 0.3f;
+                break;
+            case "Battle3":
+                hitPoint = 500;
+                attack = 13;
+                shootSpan = 0.2f;
+                break;
+            case "Battle4":
+                hitPoint = 1000;
+                attack = 15;
+                shootSpan = 0.1f;
+                break;
+        }
     }
 
     // ìÆÇ≠ä÷òAÇÃèàóùÇÕORBÇ∆ìØÇ∂
