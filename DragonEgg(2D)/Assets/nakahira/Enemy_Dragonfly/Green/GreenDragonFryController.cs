@@ -36,7 +36,6 @@ public class GreenDragonFryController : Enemy
         }
         // 最初だけちょっと前に出る
         myRigid.AddForce(Vector2.down * 200);
-        hitPoint = 5; // リテラルパンチ
     }
 
     protected override void Update()
