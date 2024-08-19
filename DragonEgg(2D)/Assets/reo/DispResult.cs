@@ -65,31 +65,33 @@ public class DispResult : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKey(KeyCode.Alpha0))
-        {
-            Debug.Log($"{kPlayerPrefsKey}.Change:0");
-            PlayerPrefs.SetInt(kPlayerPrefsKey, 0);
-        }
-        if (Input.GetKey(KeyCode.Alpha1))
-        {
-            Debug.Log($"{kPlayerPrefsKey}.Change:1");
-            PlayerPrefs.SetInt(kPlayerPrefsKey, 1);
-        }
-        if (Input.GetKey(KeyCode.Alpha2))
-        {
-            Debug.Log($"{kPlayerPrefsKey}.Change:2");
-            PlayerPrefs.SetInt(kPlayerPrefsKey, 2);
-        }
-        if (Input.GetKey(KeyCode.Alpha3))
-        {
-            Debug.Log($"{kPlayerPrefsKey}.Change:3");
-            PlayerPrefs.SetInt(kPlayerPrefsKey, 3);
-        }
-        if (Input.GetKey(KeyCode.Alpha4))
-        {
-            Debug.Log($"{kPlayerPrefsKey}.Change:4");
-            PlayerPrefs.SetInt(kPlayerPrefsKey, 4);
-        }
+        //if (Input.GetKey(KeyCode.Alpha0))
+        //{
+        //    Debug.Log($"{kPlayerPrefsKey}.Change:0");
+        //    PlayerPrefs.SetInt(kPlayerPrefsKey, 0);
+        //}
+        //if (Input.GetKey(KeyCode.Alpha1))
+        //{
+        //    Debug.Log($"{kPlayerPrefsKey}.Change:1");
+        //    PlayerPrefs.SetInt(kPlayerPrefsKey, 1);
+        //}
+        //if (Input.GetKey(KeyCode.Alpha2))
+        //{
+        //    Debug.Log($"{kPlayerPrefsKey}.Change:2");
+        //    PlayerPrefs.SetInt(kPlayerPrefsKey, 2);
+        //}
+        //if (Input.GetKey(KeyCode.Alpha3))
+        //{
+        //    Debug.Log($"{kPlayerPrefsKey}.Change:3");
+        //    PlayerPrefs.SetInt(kPlayerPrefsKey, 3);
+        //}
+        //if (Input.GetKey(KeyCode.Alpha4))
+        //{
+        //    Debug.Log($"{kPlayerPrefsKey}.Change:4");
+        //    PlayerPrefs.SetInt(kPlayerPrefsKey, 4);
+        //}
+
+
 
         // バグりそうなので廃止
         //if (Input.GetKey(KeyCode.Space)) // スペースキーが押されたら

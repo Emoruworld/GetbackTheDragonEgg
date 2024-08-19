@@ -36,8 +36,8 @@ public class TitleManager : MonoBehaviour
     {
         _eventSystem = EventSystem.current;
 
-        Debug.Log($"{kPlayerPrefsKey} Change");
-        PlayerPrefs.SetInt(kPlayerPrefsKey, 0);
+        //Debug.Log($"{kPlayerPrefsKey} Change");
+        //PlayerPrefs.SetInt(kPlayerPrefsKey, 0);
         
         value = PlayerPrefs.GetInt(kPlayerPrefsKey);
 
