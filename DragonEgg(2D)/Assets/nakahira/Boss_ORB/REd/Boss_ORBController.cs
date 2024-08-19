@@ -6,6 +6,10 @@ using UnityEngine.SceneManagement;
 public class Boss_ORBController : ORBController // Œp³
 {
     private FadeManager fadeManager;
+    private float bossTimer = 0;
+    private float bossInterval = 3; // ƒ{ƒX‚ªî‚¯‚ð‚©‚¯‚éŠÔŠu
+    private float bossGap = 0.3f; // ‚»‚ÌŽžŠÔ
+    private float initShootSpan;
     // Start is called before the first frame update
     protected override void Start()
     {
@@ -38,9 +42,28 @@ public class Boss_ORBController : ORBController // Œp³
                 shootSpan = 0.1f;
                 break;
         }
+        initShootSpan = shootSpan;
     }
 
     // “®‚­ŠÖ˜A‚Ìˆ—‚ÍORB‚Æ“¯‚¶
+    protected override void Update()
+    {
+        base.Update();
+        bossTimer += Time.deltaTime;
+        if (bossTimer > bossInterval)
+        {
+            StartCoroutine(DisableShootSpan(bossGap));
+            bossTimer = 0;
+        }
+    }
+
+    IEnumerator DisableShootSpan(float time)
+    {
+        // ˆêŽž“I‚É‚ß‚Á‚¿‚á’·‚­‚µ‚ÄŒ³‚É–ß‚·
+        shootSpan = 10;
+        yield return new WaitForSeconds(time);
+        shootSpan = initShootSpan;
+    }
 
     protected override void OnDeath()
     {

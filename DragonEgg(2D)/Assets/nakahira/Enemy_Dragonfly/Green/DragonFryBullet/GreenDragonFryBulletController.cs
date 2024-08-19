@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GreenDragonFryBulletController : EnemyBullet
 {
-    private const int BULLETATTACK = 3;
+    private const int BULLETATTACK = 4;
     private const float SPEED = 1f;
     // Start is called before the first frame update
     protected override void Start()
@@ -12,14 +12,5 @@ public class GreenDragonFryBulletController : EnemyBullet
         base.Start();
         attack = BULLETATTACK;
         speed = SPEED;
-    }
-
-    protected override void Update()
-    {
-        
-        if (CheckViewPosOver()) // 新しい移動メソッドを実装したいので画面外判定をもう一回ここに書く
-        {
-            Destroy(gameObject);
-        }
     }
 }

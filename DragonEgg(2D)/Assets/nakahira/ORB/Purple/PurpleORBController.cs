@@ -20,7 +20,7 @@ public class PurpleORBController : Enemy
     protected override void Start()
     {
         base.Start();
-        hitPoint = 20;
+        hitPoint = 40;
         attack = 3;
         speed.y = -0.5f;
         shootSpan = 1;

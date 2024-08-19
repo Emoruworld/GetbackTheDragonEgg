@@ -82,7 +82,7 @@ public class HadouShooter : Shooter
             }
         }
 
-        if (Input.GetKey(KeyCode.Space) || Input.GetKeyDown("joystick button 0")) // Spaceキー長押しで
+        if (Input.GetKey(KeyCode.Space) || Input.GetKey("joystick button 0")) // Spaceキー長押しで
         {
             // スペースが押されている間、チャージする
             beamChargeTimer += Time.deltaTime;
@@ -95,7 +95,7 @@ public class HadouShooter : Shooter
             chargeMeterUI.FillMeter(beamChargeTimer * chargeMeterFactor);
         }
 
-        if (Input.GetKeyUp(KeyCode.Space) || Input.GetKeyDown("joystick button 0")) // キーを離したら
+        if (Input.GetKeyUp(KeyCode.Space) || Input.GetKeyUp("joystick button 0")) // キーを離したら
         {
             float reduceTime = 0.2f; // 戻るのに要する時間。ビームがちゃんと出る時以外は素早く戻る
             // キーを離したとき、チャージが最大ならビームが出る

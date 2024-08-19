@@ -142,7 +142,7 @@ public class TitleManager : MonoBehaviour
         }
         _noButton.SetActive(true);
         _goButton.SetActive(true);
-        _eventSystem.SetSelectedGameObject(_newgameButton);
+        _eventSystem.SetSelectedGameObject(_noButton);
     }
 
     public void OnclickNoButton()

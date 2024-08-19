@@ -60,7 +60,7 @@ public class FireShooter : Shooter
             }
         }
 
-        if (Input.GetKey(KeyCode.Space) || Input.GetKeyDown("joystick button 0")) // Spaceキー長押しで
+        if (Input.GetKey(KeyCode.Space) || Input.GetKey("joystick button 0")) // Spaceキー長押しで
         {
             fireShootTimer += Time.deltaTime;
 
@@ -105,7 +105,7 @@ public class FireShooter : Shooter
             }
         }
 
-        if (Input.GetKeyUp(KeyCode.Space) || Input.GetKeyDown("joystick button 0")) // キーを離したら
+        if (Input.GetKeyUp(KeyCode.Space) || Input.GetKeyUp("joystick button 0")) // キーを離したら
         {
             fireShootTimer = -fireInterval; // fireTimerの初期値をfireInterval分ずらしておく
         }

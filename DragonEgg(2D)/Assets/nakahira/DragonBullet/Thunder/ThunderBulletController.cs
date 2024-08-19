@@ -16,7 +16,7 @@ public class ThunderBulletController : PlayerBullet
     protected override void Update()
     {
         // ÉLÅ[Çó£ÇµÇΩÇÁ
-        if (Input.GetKeyUp(KeyCode.Space))
+        if (Input.GetKeyUp(KeyCode.Space) || Input.GetKeyUp("joystick button 0"))
         {
             isStay = false;
         }
@@ -33,7 +33,7 @@ public class ThunderBulletController : PlayerBullet
 
     public void  SetAttack(int attack)
     {
-        finalAttack = attack;
+        finalAttack = attack * PlayerController.playerAttack;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

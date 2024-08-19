@@ -25,7 +25,7 @@ public class IceBulletController : PlayerBullet
     protected override void Update()
     {
         // キー入力の処理を書く
-        if (Input.GetKeyUp(KeyCode.Space))
+        if (Input.GetKeyUp(KeyCode.Space) || Input.GetKeyUp("joystick button 0"))
         {
             // iceShooterがスペースキー長押しで弾を生成しているので
             // こちらは離して発射の処理を書く

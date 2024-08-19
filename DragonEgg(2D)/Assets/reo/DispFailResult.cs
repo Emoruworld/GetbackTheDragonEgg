@@ -7,7 +7,8 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI; // 卵とか
 using TMPro;
-using System.Threading;  // sleep用
+using System.Threading;
+using UnityEngine.EventSystems;  // sleep用
 
 
 public class DispFailResult : MonoBehaviour
@@ -42,31 +43,32 @@ public class DispFailResult : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKey(KeyCode.Space)) // スペースキーが押されたら
-        {
-            StopAllCoroutines();
-            //DialogText.text = dialogText;  // DialogText.text関数にdialogText変数の中身を代入
-            ResultText.text = "";
-            foreach (char item in dialogText)
-            {
-                if (item == '|')
-                {
-                    // <br>をDialogText.textに代入する
-                    ResultText.text += "<br>";
-                }
-                else if (item == '/')
-                {
-                    // 何もしない
-                }
-                else
-                {
-                    ResultText.text += item;  // 
-                }
-            }
+        //if (Input.GetKey(KeyCode.Space)) // スペースキーが押されたら
+        //{
+        //    StopAllCoroutines();
+        //    //DialogText.text = dialogText;  // DialogText.text関数にdialogText変数の中身を代入
+        //    ResultText.text = "";
+        //    foreach (char item in dialogText)
+        //    {
+        //        if (item == '|')
+        //        {
+        //            // <br>をDialogText.textに代入する
+        //            ResultText.text += "<br>";
+        //        }
+        //        else if (item == '/')
+        //        {
+        //            // 何もしない
+        //        }
+        //        else
+        //        {
+        //            ResultText.text += item;  // 
+        //        }
+        //    }
 
-            GoHomeButton.SetActive(true);  // ボタンを表示
-            GoStageButton.SetActive(true);
-        }
+        //    GoHomeButton.SetActive(true);  // ボタンを表示
+        //    GoStageButton.SetActive(true);
+
+        //}
     }
 
     public void DispResultFunc()
@@ -119,6 +121,7 @@ public class DispFailResult : MonoBehaviour
 
         GoHomeButton.SetActive(true);  // ボタンを表示
         GoStageButton.SetActive(true);
-
+        EventSystem e = EventSystem.current;
+        e.SetSelectedGameObject(GoHomeButton);
     }
 }

@@ -36,7 +36,7 @@ public class PurpleDragonFryController : Enemy
         }
         // 最初だけちょっと前に出る
         myRigid.AddForce(Vector2.down * 200);
-        hitPoint = 10; // リテラルパンチ
+        hitPoint = 15; // リテラルパンチ
     }
 
     protected override void Update()

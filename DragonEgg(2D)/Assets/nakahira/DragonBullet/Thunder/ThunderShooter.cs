@@ -53,7 +53,7 @@ public class ThunderShooter : Shooter
             thunderBulletController = thunderBulletInstance.GetComponent<ThunderBulletController>();
         }
 
-        if (Input.GetKey(KeyCode.Space) || Input.GetKeyDown("joystick button 0")) // Spaceキー長押しで
+        if (Input.GetKey(KeyCode.Space) || Input.GetKey("joystick button 0")) // Spaceキー長押しで
         {
             timer += Time.deltaTime; // いつものごとくタイマー計測
             // 最大ため時間に達したら抑える
@@ -75,7 +75,7 @@ public class ThunderShooter : Shooter
             thunderBulletController.SetAttack((int)attack);
         }
 
-        if (Input.GetKeyUp(KeyCode.Space) || Input.GetKeyDown("joystick button 0")) // キーを離したら
+        if (Input.GetKeyUp(KeyCode.Space) || Input.GetKeyUp("joystick button 0")) // キーを離したら
         {
             // 弾発射(親子解除)
             thunderBulletInstance.transform.parent = null;

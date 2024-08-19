@@ -8,7 +8,7 @@ public class GreenDragonFryController : Enemy
     private const float SHOOTSPAN = 1;
     private Rigidbody2D myRigid;
     // よける際の速さ
-    private float dodgeForce = 250;
+    private float dodgeForce = 300;
     // 帰るときのスピード
     private float exitForceX = 10f;
     private float exitForceY = -1f;

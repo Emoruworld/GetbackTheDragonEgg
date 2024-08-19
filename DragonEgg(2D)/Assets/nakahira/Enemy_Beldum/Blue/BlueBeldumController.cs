@@ -8,7 +8,7 @@ public class BlueBeldumController : Enemy
     private const int BELDUMHP = 5;
     private const int BELDUMATTACK = 4;
     // 角速度。1秒に何度回転できるか
-    private int rotaSpeed = 60;
+    private int rotaSpeed = 120;
     // 速さ(これが角度で分解される)
     private float moveSpeed = 0.8f;
     // 起動してnフレーム後にまっすぐ飛ぶようにする

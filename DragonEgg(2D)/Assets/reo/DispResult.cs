@@ -218,6 +218,9 @@ public class DispResult : MonoBehaviour
         {
             _goHomeButton.SetActive(true);  // ボタンを表示
             _goStageButton.SetActive(true);
+            // ボタンにフォーカス
+            EventSystem eventSystem = EventSystem.current;
+            eventSystem.SetSelectedGameObject(_goHomeButton);
         }
         
     }
@@ -275,12 +278,17 @@ public class DispResult : MonoBehaviour
         if (value == 4) // 最後のステージをクリアしたら
         {
             _creditButton.SetActive(true);
-            //EventSystem.SetSelectedGameObject(_creditButton);
+            // ボタンにフォーカス
+            EventSystem eventSystem = EventSystem.current;
+            eventSystem.SetSelectedGameObject(_creditButton);
         }
         else
         {
             _goHomeButton.SetActive(true);  // ボタンを表示
             _goStageButton.SetActive(true);
+            // ボタンにフォーカス
+            EventSystem eventSystem = EventSystem.current;
+            eventSystem.SetSelectedGameObject(_goHomeButton);
         }
 
         yield return 0;

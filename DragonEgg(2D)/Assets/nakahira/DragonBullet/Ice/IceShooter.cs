@@ -60,7 +60,7 @@ public class IceShooter : Shooter
             // 何もなし
         }
 
-        if (Input.GetKey(KeyCode.Space) || Input.GetKeyDown("joystick button 0")) // Spaceキー長押しで
+        if (Input.GetKey(KeyCode.Space) || Input.GetKey("joystick button 0")) // Spaceキー長押しで
         {
             // 長押ししていると弾が次々に生成
             timer += Time.deltaTime;
@@ -93,7 +93,7 @@ public class IceShooter : Shooter
             }
         }
 
-        if (Input.GetKeyUp(KeyCode.Space) || Input.GetKeyDown("joystick button 0")) // キーを離したら
+        if (Input.GetKeyUp(KeyCode.Space) || Input.GetKeyUp("joystick button 0")) // キーを離したら
         {
             // 移動する処理は弾自身に持たせている
             // 弾の数もリセット

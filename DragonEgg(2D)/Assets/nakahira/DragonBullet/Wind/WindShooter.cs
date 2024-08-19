@@ -64,12 +64,12 @@ public class WindShooter : Shooter
             }
         }
 
-        if (Input.GetKey(KeyCode.Space) || Input.GetKeyDown("joystick button 0")) // Spaceキー長押しで
+        if (Input.GetKey(KeyCode.Space) || Input.GetKey("joystick button 0")) // Spaceキー長押しで
         {
             // 無し
         }
 
-        if (Input.GetKeyUp(KeyCode.Space) || Input.GetKeyDown("joystick button 0")) // キーを離したら
+        if (Input.GetKeyUp(KeyCode.Space) || Input.GetKeyUp("joystick button 0")) // キーを離したら
         {
             // 無し
         }

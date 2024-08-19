@@ -5,12 +5,12 @@ using UnityEngine;
 
 public class BeldumController : Enemy
 {
-    private const int BELDUMHP = 2;
+    private const int BELDUMHP = 20;
     private const int BELDUMATTACK = 2;
     // 角速度。1秒に何度回転できるか
-    private int rotaSpeed = 90;
+    private int rotaSpeed = 180;
     // 速さ(これが角度で分解される)
-    private float moveSpeed = 1f;
+    private float moveSpeed = 2f;
     // 起動してnフレーム後にまっすぐ飛ぶようにする
     private int lifeSpan = 300;
     // 自分がどこ向いているか

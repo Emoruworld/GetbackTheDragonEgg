@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class SoundPanelManeger : MonoBehaviour
 {
@@ -20,10 +21,14 @@ public class SoundPanelManeger : MonoBehaviour
     public void OnSoundPanel()
     {
         soundPanel.SetActive(true);
+        EventSystem e = EventSystem.current;
+        e.SetSelectedGameObject(soundPanel.transform.GetChild(0).gameObject);
     }
 
     public void OffSoundPanel()
     {
         soundPanel.SetActive(false);
+        EventSystem e = EventSystem.current;
+        e.SetSelectedGameObject(GameObject.Find("SEButton"));
     }
 }

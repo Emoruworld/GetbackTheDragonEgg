@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;  // sceneØ‚è‘Ö‚¦‚ðs‚¤‚½‚ß
 using TMPro;
+using UnityEngine.EventSystems;
 
 public class CreditScript : MonoBehaviour
 {
@@ -21,16 +22,18 @@ public class CreditScript : MonoBehaviour
     void Update()
     {
         
-        if(this.transform.position.y > 1300)
+        if(this.transform.position.y > 1900)
         {
             isEnd = true;
             button.SetActive(true);
+            EventSystem eventSystem = EventSystem.current;
+            eventSystem.SetSelectedGameObject(button);
         }
 
         if (!isEnd)
         {
 
-            if (Input.GetKey(KeyCode.Space))
+            if (Input.GetKey(KeyCode.Space) || Input.GetKey("joystick button 0"))
             {
                 this.transform.position += new Vector3(0, scroolSpeed * 3 * Time.deltaTime, 0);
             }
