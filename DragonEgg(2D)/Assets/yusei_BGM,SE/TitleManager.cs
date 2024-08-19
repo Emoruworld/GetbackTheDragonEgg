@@ -163,7 +163,7 @@ public class TitleManager : MonoBehaviour
     {
         _positiveSe.Play();
         Application.Quit();
-        // editorã‚ÅI—¹‚³‚¹‚éˆ—
-        UnityEditor.EditorApplication.isPlaying = false;
+        //// editorã‚ÅI—¹‚³‚¹‚éˆ—
+        //UnityEditor.EditorApplication.isPlaying = false;
     }
 }
